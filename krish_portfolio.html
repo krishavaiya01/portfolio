@@ -72,14 +72,33 @@
   }
 
   .nav-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     font-family: 'Syne', sans-serif;
     font-weight: 800;
-    font-size: 1.3rem;
-    letter-spacing: -0.02em;
-    color: var(--accent);
+    letter-spacing: -0.01em;
+    color: var(--text);
   }
 
-  .nav-logo span { color: var(--text); }
+  .logo-mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    color: #031018;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.28);
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+    color: var(--text);
+  }
 
   .nav-links {
     display: flex;
@@ -742,7 +761,9 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">K<span>rish</span>.</div>
+  <div class="nav-logo">
+    <span class="logo-text">Krishkumar</span>
+  </div>
   <ul class="nav-links">
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>

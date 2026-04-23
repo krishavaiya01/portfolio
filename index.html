@@ -603,6 +603,36 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.76rem;
+    color: var(--accent);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 6px 12px;
+    background: rgba(0, 212, 255, 0.05);
+    transition: all 0.3s;
+    letter-spacing: 0.03em;
+  }
+
+  .project-link:hover {
+    color: var(--bg);
+    background: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-1px);
   }
 
   .stack-tag {
@@ -975,46 +1005,16 @@
           <span class="stack-tag">Azure</span>
           <span class="stack-tag">GCP</span>
         </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-header">
-        <div class="project-number">02</div>
-        <div class="project-title">MatchSphere</div>
-        <div class="project-subtitle">Scalable Dating Platform · Full Stack Developer (Project) </div>
-      </div>
-      <div class="project-body">
-        <ul class="project-desc">
-          <li>Associated with Bluestock.</li>
-          <li>Designed and developed MatchSphere, a scalable cross-platform dating app with production-ready architecture focused on performance, security, and usability.</li>
-          <li>Built a modular RESTful backend using Node.js and Express for Auth, User, Discovery, Chat, and Admin services.</li>
-          <li>Implemented swipe-based matching, personalized discovery feed, and advanced filters for age, distance, interests, and preferences.</li>
-          <li>Developed real-time 1:1 chat with media sharing using Socket.io, including typing indicators and online/offline presence.</li>
-          <li>Designed PostgreSQL schema with Prisma ORM, integrated Firebase/Auth0 with JWT authorization, and added KYC verification with admin moderation.</li>
-          <li>Used Redis for caching/rate limiting, Cloudflare R2 for secure media storage, and FCM push notifications for real-time engagement.</li>
-        </ul>
-        <div class="project-stack">
-          <span class="stack-tag">React Native (Expo)</span>
-          <span class="stack-tag">Node.js</span>
-          <span class="stack-tag">Express.js</span>
-          <span class="stack-tag">PostgreSQL (Neon DB)</span>
-          <span class="stack-tag">Prisma ORM</span>
-          <span class="stack-tag">Firebase Auth</span>
-          <span class="stack-tag">Auth0</span>
-          <span class="stack-tag">Redis</span>
-          <span class="stack-tag">Socket.io</span>
-          <span class="stack-tag">Cloudflare R2</span>
-          <span class="stack-tag">REST APIs</span>
-          <span class="stack-tag">JWT</span>
-          <span class="stack-tag">FCM</span>
+        <div class="project-links">
+          <a class="project-link" href="https://green-vision-cloud.vercel.app/" target="_blank" rel="noopener noreferrer">🔗 Live Demo</a>
+          <a class="project-link" href="https://github.com/krishavaiya01/GreenVision-Cloud-" target="_blank" rel="noopener noreferrer">💻 GitHub Repository</a>
         </div>
       </div>
     </div>
 
     <div class="project-card">
       <div class="project-header">
-        <div class="project-number">03</div>
+        <div class="project-number">02</div>
         <div class="project-title">Hotel Booking Chatbot</div>
         <div class="project-subtitle">AI-Driven Booking Automation</div>
       </div>
